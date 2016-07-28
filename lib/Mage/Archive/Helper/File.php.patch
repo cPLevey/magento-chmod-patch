@@ -1,0 +1,11 @@
+--- lib/Mage/Archive/Helper/File.php.dist	2016-07-28 06:17:18.000000000 -0500
++++ lib/Mage/Archive/Helper/File.php	2016-07-28 06:19:28.000000000 -0500
+@@ -99,7 +99,7 @@
+      * @param int $chmod
+      * @throws Mage_Exception
+      */
+-    public function open($mode = 'w+', $chmod = 0666)
++    public function open($mode = 'w+', $chmod = 0644)
+     {
+         if ($this->_isWritableMode($mode)) {
+             if (!is_writable($this->_fileLocation)) {
